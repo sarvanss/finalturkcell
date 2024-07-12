@@ -7,7 +7,7 @@ export default function Shop() {
 
     // Veri çekme fonksiyonunu tanımlayın
     const getProducts = useCallback(async () => {
-        const response = await fetch('https://finalturkcell.vercel.app/db.json');
+        const response = await fetch('https://finalturkcell-ll7i7dmsy-turkcell-final.vercel.app/');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
