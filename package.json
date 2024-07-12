@@ -1,9 +1,9 @@
 {
-  "name": "hepsi11",
+  "name": "shopco",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "run dev",
     "build": "run build",
     "start": "run dev",
     "lint": "next lint",
