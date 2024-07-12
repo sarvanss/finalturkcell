@@ -6,7 +6,7 @@ export default function Shop() {
     const [, setProducts] = useState([]);
 
     const getProducts = useCallback(async () => {
-        const response = await fetch('http://localhost:3000/product');
+        const response = await fetch('https://finalturkcell.vercel.app/db.json');
         const data = await response.json();
         
         setProducts(data);
