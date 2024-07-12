@@ -26,7 +26,7 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#ffffff" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       </head>
       <body>
         <div className="main-preloader">
