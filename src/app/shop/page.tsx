@@ -2,16 +2,6 @@
 
 import { useCallback, useEffect, useState } from "react";
 
-type Product = {
-    id: number;
-    name: string;
-    image: string;
-    price: number;
-    rating: number;
-    discount?: number;
-    originalPrice?: number;
-};
-
 export default function Shop() {
     const [products, setProducts] = useState<Product[]>([]);
 
