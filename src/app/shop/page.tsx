@@ -2,8 +2,18 @@
 
 import { useCallback, useEffect, useState } from "react";
 
+type Product = {
+    id: number;
+    name: string;
+    image: string;
+    price: number;
+    rating: number;
+    discount?: number;
+    originalPrice?: number;
+};
+
 export default function Shop() {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState<Product[]>([]);
 
     // Veri çekme fonksiyonunu tanımlayın
     const getProducts = useCallback(async () => {
@@ -215,11 +225,11 @@ export default function Shop() {
                                 </div>
 
                                 <div className="row align-items-stretch">
-                                    {products.map((product, index) => (
-                                        <div key={index} className="col-6 col-md-4 py-1 px-2 my-4">
+                                    {products.map((product) => (
+                                        <div key={product.id} className="col-6 col-md-4 py-1 px-2 my-4">
                                             <div className="shop-item h-100">
                                                 <div className="product-container bg-transparent h-100 p-2 rounded-3">
-                                                    <a href="product" className="text-black text-decoration-none">
+                                                    <a href={`product/${product.id}`} className="text-black text-decoration-none">
                                                         <img loading="lazy" src={`/images/products/${product.image}`} alt="product" className="w-100 rounded-4" />
                                                         <h2 className="my-3">{product.name}</h2>
                                                         <p>
