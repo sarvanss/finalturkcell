@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "run dev",
-    "build": "run build",
-    "start": "run dev",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next dev",
     "lint": "next lint",
     "json-serve": "json-server --watch db.json --port 4000"
   },
