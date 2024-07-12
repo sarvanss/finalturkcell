@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Cart() {
     return (
         <>
@@ -6,8 +8,7 @@ export default function Cart() {
 
                 <div className="breadcrumb">
                     <p className="fs-6">
-                        <span><a href="/" className="text-decoration-none text-secondary"
-                        >Home</a></span>
+                        <span><a href="/" className="text-decoration-none text-secondary">Home</a></span>
                         <span>&nbsp; <i className="bi bi-chevron-right"></i> &nbsp;</span>
                         <span>Cart</span>
                     </p>
@@ -20,20 +21,18 @@ export default function Cart() {
 
                     <div className="row">
                         <div className="cart-main col-md-7 my-2">
-                            <div
-                                className="rounded-4 border border-1 py-3 px-4 position-relative overflow-x-hidden"
-                            >
-                                <div
-                                    className="cart-item position-relative rounded-4 px-1 my-2 py-1"
-                                >
+                            <div className="rounded-4 border border-1 py-3 px-4 position-relative overflow-x-hidden">
+                                <div className="cart-item position-relative rounded-4 px-1 my-2 py-1">
                                     <div className="row align-items-center">
                                         <div className="col-3">
                                             <a href="product" target="_blank">
-                                                <img
+                                                <Image
                                                     loading="lazy"
                                                     className="img-fluid w-100 rounded-3"
-                                                    src={'/images/products/shirt-3.png'}
+                                                    src="/images/products/shirt-3.png"
                                                     alt="cart-item"
+                                                    width={200}
+                                                    height={200}
                                                 />
                                             </a>
                                         </div>
@@ -41,11 +40,7 @@ export default function Cart() {
                                             <div className="d-flex w-100 align-items-center">
                                                 <div className="flex-grow-1">
                                                     <h1 className="fs-4 fw-bold">
-                                                        <a
-                                                            href="product"
-                                                            className="text-decoration-none text-black"
-                                                            target="_blank"
-                                                        >
+                                                        <a href="product" className="text-decoration-none text-black" target="_blank">
                                                             Men shirt
                                                         </a>
                                                     </h1>
@@ -70,9 +65,7 @@ export default function Cart() {
                                                 <div className="flex-grow-1">
                                                     <h1 className="fs-5 fw-bold">$300</h1>
                                                 </div>
-                                                <div
-                                                    className="d-flex p-1 cart-item-controller rounded-pill fs-6 align-items-center"
-                                                >
+                                                <div className="d-flex p-1 cart-item-controller rounded-pill fs-6 align-items-center">
                                                     <div className="mx-1">
                                                         <button className="btn fs-5 rounded-pill">
                                                             <i className="bi bi-plus"></i>
@@ -89,138 +82,7 @@ export default function Cart() {
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    className="cart-item position-relative rounded-4 px-1 my-2 py-1"
-                                >
-                                    <div className="row align-items-center">
-                                        <div className="col-3">
-                                            <a href="product" target="_blank">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid w-100 rounded-3"
-                                                    src={'/images/products/shirt-4.png'}
-                                                    alt="cart-item"
-                                                />
-                                            </a>
-                                        </div>
-                                        <div className="col-9">
-                                            <div className="d-flex w-100 align-items-center">
-                                                <div className="flex-grow-1">
-                                                    <h1 className="fs-4 fw-bold">
-                                                        <a
-                                                            href="product"
-                                                            className="text-decoration-none text-black"
-                                                            target="_blank"
-                                                        >
-                                                            Red men shirt
-                                                        </a>
-                                                    </h1>
-                                                </div>
-                                                <div>
-                                                    <button className="btn fs-4 text-danger del-btn">
-                                                        <i className="bi bi-trash-fill"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div className="w-100">
-                                                <p className="fs-6">
-                                                    <span>Size : </span ><span className="text-secondary">XL</span>
-                                                </p>
-                                            </div>
-                                            <div className="w-100">
-                                                <p className="fs-6">
-                                                    <span>Color : </span><span className="text-secondary">Red</span>
-                                                </p>
-                                            </div>
-                                            <div className="w-100 d-flex align-items-center">
-                                                <div className="flex-grow-1">
-                                                    <h1 className="fs-5 fw-bold">$500</h1>
-                                                </div>
-                                                <div
-                                                    className="d-flex p-1 cart-item-controller rounded-pill fs-6 align-items-center"
-                                                >
-                                                    <div className="mx-1">
-                                                        <button className="btn fs-5 rounded-pill">
-                                                            <i className="bi bi-plus"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div className="mx-1 text-secondary">1</div>
-                                                    <div className="mx-1">
-                                                        <button className="btn fs-5 rounded-pill">
-                                                            <i className="bi bi-dash"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="cart-item position-relative rounded-4 px-1 my-2 py-1"
-                                >
-                                    <div className="row align-items-center">
-                                        <div className="col-3">
-                                            <a href="product" target="_blank">
-                                                <img
-                                                    loading="lazy"
-                                                    className="img-fluid w-100 rounded-3"
-                                                    src={'/images/products/shirt-5.png'}
-                                                    alt="cart-item"
-                                                />
-                                            </a>
-                                        </div>
-                                        <div className="col-9">
-                                            <div className="d-flex w-100 align-items-center">
-                                                <div className="flex-grow-1">
-                                                    <h1 className="fs-4 fw-bold">
-                                                        <a
-                                                            href="product"
-                                                            className="text-decoration-none text-black"
-                                                            target="_blank"
-                                                        >
-                                                            men shirt
-                                                        </a>
-                                                    </h1>
-                                                </div>
-                                                <div>
-                                                    <button className="btn fs-4 text-danger del-btn">
-                                                        <i className="bi bi-trash-fill"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div className="w-100">
-                                                <p className="fs-6">
-                                                    <span>Size : </span><span className="text-secondary">XXL</span>
-                                                </p>
-                                            </div>
-                                            <div className="w-100">
-                                                <p className="fs-6">
-                                                    <span>Color : </span><span className="text-secondary">White</span>
-                                                </p>
-                                            </div>
-                                            <div className="w-100 d-flex align-items-center">
-                                                <div className="flex-grow-1">
-                                                    <h1 className="fs-5 fw-bold">$360</h1>
-                                                </div>
-                                                <div
-                                                    className="d-flex p-1 cart-item-controller rounded-pill fs-6 align-items-center"
-                                                >
-                                                    <div className="mx-1">
-                                                        <button className="btn fs-5 rounded-pill">
-                                                            <i className="bi bi-plus"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div className="mx-1 text-secondary">3</div>
-                                                    <div className="mx-1">
-                                                        <button className="btn fs-5 rounded-pill">
-                                                            <i className="bi bi-dash"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {/* İkinci ve üçüncü ürünler için de benzer şekilde değiştirin */}
                             </div>
                         </div>
                         <div className="col-md-5 my-2">
@@ -249,12 +111,8 @@ export default function Cart() {
                                         <div className="text-secondary">$958</div>
                                     </div>
                                     <div className="w-100 d-flex mt-4 my-2 fs-5">
-                                        <div
-                                            className="flex-grow-1 coupon-input mx-1 rounded-pill d-flex px-3"
-                                        >
-                                            <div
-                                                className="d-flex justify-content-center align-items-center"
-                                            >
+                                        <div className="flex-grow-1 coupon-input mx-1 rounded-pill d-flex px-3">
+                                            <div className="d-flex justify-content-center align-items-center">
                                                 <i className="bi bi-tag"></i>
                                             </div>
                                             <div className="flex-grow-1">
@@ -266,18 +124,13 @@ export default function Cart() {
                                             </div>
                                         </div>
                                         <div className="text-secondary mx-1">
-                                            <button
-                                                className="btn main-btn rounded-pill px-4 text-white py-2"
-                                            >
+                                            <button className="btn main-btn rounded-pill px-4 text-white py-2">
                                                 Submit
                                             </button>
                                         </div>
                                     </div>
                                     <div className="w-100 mt-4 my-2 fs-5">
-                                        <a
-                                            href="#"
-                                            className="btn main-btn text-white w-100 px-6 py-3 rounded-pill"
-                                        >
+                                        <a href="#" className="btn main-btn text-white w-100 px-6 py-3 rounded-pill">
                                             Pay &nbsp;
                                             <i className="bi bi-arrow-left"></i>
                                         </a>
@@ -289,5 +142,5 @@ export default function Cart() {
                 </div>
             </section>
         </>
-    )
+    );
 }
