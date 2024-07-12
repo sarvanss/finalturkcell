@@ -7,7 +7,7 @@ export default function Shop() {
 
     // Veri çekme fonksiyonunu tanımlayın
     const getProducts = useCallback(async () => {
-        const response = await fetch('https://finalturkcell.vercel.app/');
+        const response = await fetch('http://localhost:3000/product');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
